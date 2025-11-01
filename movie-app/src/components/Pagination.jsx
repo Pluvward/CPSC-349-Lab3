@@ -14,7 +14,6 @@ function PageButton({ children, onClick, disabled, current }) {
 }
 
 export default function Pagination({ page, totalPages, onPrev, onNext, onGo }) {
-  // render a compact window of page numbers around current
   const windowSize = 3
   const start = Math.max(1, page - windowSize)
   const end = Math.min(totalPages, page + windowSize)

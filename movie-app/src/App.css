@@ -1,7 +1,6 @@
-/* -------- Light theme to match the demo -------- */
 :root{
   --page-bg:#eef2f6;
-  --hero:#2f475b;            /* blue header bar */
+  --hero:#2f475b;
   --hero-bottom:#2b4456;
   --text:#0f1720;
   --muted:#566074;
@@ -22,11 +21,9 @@ body{
   background: var(--page-bg);
 }
 
-/* Page layout */
 .page{ min-height:100%; display:flex; flex-direction:column; }
 .container{ max-width:1200px; margin:0 auto; padding:0 16px; }
 
-/* Hero header like the demo */
 .header{
   background: linear-gradient(180deg, var(--hero) 0%, var(--hero-bottom) 100%);
   color:#fff;
@@ -41,7 +38,6 @@ body{
   text-align:center;
 }
 
-/* Centered search/sort row */
 .bar{
   display:flex; gap:12px; justify-content:center; align-items:center;
 }
@@ -68,10 +64,8 @@ body{
   box-shadow: 0 0 0 3px rgba(59,130,246,.25);
 }
 
-/* Section heading hidden (demo doesn’t show it) */
 .section-title{ display:none; }
 
-/* Grid matches card spacing from demo */
 main.container{ padding: 28px 0 8px; }
 .grid{
   list-style:none; padding:0; margin: 0;
@@ -81,7 +75,6 @@ main.container{ padding: 28px 0 8px; }
 @media (max-width:1100px){ .grid{ grid-template-columns: repeat(3, 1fr); } }
 @media (max-width:780px){ .grid{ grid-template-columns: repeat(2, 1fr); } }
 
-/* Movie cards – white tile with rounded corners and soft shadow */
 .card{
   background: var(--card);
   border: 1px solid var(--card-border);
@@ -107,7 +100,6 @@ main.container{ padding: 28px 0 8px; }
   display:flex; flex-direction:column; gap:6px;
 }
 
-/* Pagination – neutral buttons to mirror demo feel */
 .pagination{
   margin: 28px 0 40px;
   display:flex; justify-content:center; align-items:center; gap:8px; flex-wrap:wrap;
